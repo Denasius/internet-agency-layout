@@ -5,7 +5,7 @@ $font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Robot
 
 // $custom-font: "Roboto";
 
-$font-size: 16px;
+$font-size: 14px;
 $line-height: 1.65;
 
 // H-sizing
@@ -16,9 +16,9 @@ $font-size--h4: 25px;
 $font-size--h5: 20px;
 $font-size--h6: 20px;
 
-body, html{
-  overflow-y: hidden;
-}
+/* Colors */
+$blue_color: #0494ef;
+
 
 body {
   font-family: $font-family;
@@ -31,6 +31,7 @@ body {
 h1 {
   font-size: $font-size--h1;
   font-weight: 700;
+  color: #fff;
   // line-height: ;
 }
 
@@ -71,4 +72,27 @@ strong {
 
 button {
   // font-family: $custom-font, $font-family;
+}
+
+a{
+  color: #fff;
+  transition: all .3s ease;
+  text-decoration: none;
+  &:hover{
+    color: $blue_color;
+    text-decoration: none;
+  }
+}
+
+.wrapper{
+  padding-left: 171px !important;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.blue-color{
+  color: $blue_color;
 }

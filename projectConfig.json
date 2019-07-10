@@ -11,7 +11,9 @@
     "button": [],
     "burger": [],
     "close": [],
-    "video": []
+    "video": [],
+    "navigation": [],
+    "indicator": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",

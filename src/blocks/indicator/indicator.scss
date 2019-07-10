@@ -1,0 +1,38 @@
+.indicator {
+
+	padding-top: 367px;
+	padding-bottom: 70px;
+	color: #fff;
+
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+
+	.a-nav_prev, &-count_first{
+		padding-right: 30px;
+	}
+
+	.a-nav_next, &-count_last{
+		padding-left: 30px;
+	}
+
+	&-page{
+		padding-bottom: 5px;
+		& > span{
+			height: 3px;
+			min-width: 58px;
+			display: inline-block;
+			background-color: #ffffff;
+			opacity: 0.16;
+		}
+		&_current{
+			background-color: $blue_color !important;
+			opacity: 1 !important;
+		}
+		&_next{
+			background-color: $blue_color !important;
+			opacity: 0.36 !important;
+		}
+	}
+
+}
