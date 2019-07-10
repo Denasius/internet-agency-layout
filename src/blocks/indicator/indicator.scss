@@ -1,7 +1,4 @@
 .indicator {
-
-	padding-top: 367px;
-	padding-bottom: 70px;
 	color: #fff;
 
 	display: flex;
@@ -35,4 +32,26 @@
 		}
 	}
 
+}
+
+.social{
+	color: #fff;
+	padding-right: 173px;
+	a{
+		padding-left: 40px;
+		line-height: 29px;
+		font-weight: 700;
+		&:hover{
+			color: #fff;
+		}
+	}
+}
+
+.foot{
+
+	padding-top: 367px;
+	padding-bottom: 70px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
