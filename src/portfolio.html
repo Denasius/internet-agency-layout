@@ -20,8 +20,26 @@
     <div class="wrapper">
       @@include('blocks/navigation/navigation.html')
       @@include('blocks/portfolio-title/portfolio-title.html')
+      @@include('blocks/portfolio-grid/portfolio-grid.html')
+      @@include('blocks/portfolio-footer/portfolio-footer.html')
 
     </div>
     @@include('_include/page_bottom.html')
+    <script type="text/javascript">
+      (function ($) {
+        var initScroll = function () {
+          $(".portfolio-block").niceScroll({
+            cursorcolor:"#0494ef",
+            horizrailenabled: true,
+            railalign: 'right',
+            autohidemode: false,
+          });
+        }
+
+        $(document).ready(function () {
+          initScroll();
+        });
+      })(jQuery)
+    </script>
   </body>
 </html>

@@ -20,7 +20,9 @@
     "service-title": [],
     "service-cart": [],
     "service-foot": [],
-    "portfolio-title": []
+    "portfolio-title": [],
+    "portfolio-grid": [],
+    "portfolio-footer": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",
@@ -34,7 +36,8 @@
   "addJsBefore": [
     "./node_modules/jquery/dist/jquery.min.js",
     "./node_modules/svg4everybody/dist/svg4everybody.js",
-    "./node_modules/object-fit-images/dist/ofi.js"
+    "./node_modules/object-fit-images/dist/ofi.js",
+    "./node_modules/nicescroll/jquery.nicescroll.js"
   ],
   "addJsAfter": [
     "./src/js/global-script.js",
