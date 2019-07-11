@@ -5,6 +5,7 @@
     <base href="/">
     <title>A internet agency focused on web.</title>
     <meta name="description" content />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     @@include('_include/page_head.html')
 
     <!-- <link
@@ -16,9 +17,41 @@
     /> -->
   </head>
 
-  <body id="page-home">
+  <body id="page-home" class="team">
     <div class="wrapper">
-      123
+      @@include('blocks/navigation/navigation.html')
+      @@include('blocks/team-title/team-title.html')
+      @@include('blocks/team-slider/team-slider.html')
+      @@include('blocks/team-foot/team-foot.html')
     </div>
+    @@include('_include/page_bottom.html')
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script type="text/javascript">
+      (function ($) {
+        var initSlider = function () {
+          $('.slider').slick({
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            dots: false,
+            arrow: true,
+            nextArrow: '<a class="slick-custom-arrow arrow-prev" href="javascript:void()"><svg width="12" height="18"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#right-arrow"></use></svg></a>',
+            prevArrow: '<a class="slick-custom-arrow arrow-next" href="javascript:void()"><svg width="12" height="18"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#left-arrow"></use></svg></a>',
+            responsive: [
+              {
+                breakpoint: 1400,
+                settings: {
+                  slidesToShow: 4,
+                }
+              },
+            ]
+          });
+        }
+
+        $(document).ready(function () {
+          initSlider()
+        });
+      })(jQuery)
+    </script>
   </body>
 </html>

@@ -1,4 +1,4 @@
-.indicator {
+.indicator, .team-foot, .service-foot {
 	color: #fff;
 
 	display: flex;
@@ -47,7 +47,7 @@
 	}
 }
 
-.foot{
+.foot, .team-foot, .service-foot{
 
 	padding-top: 367px;
 	padding-bottom: 70px;

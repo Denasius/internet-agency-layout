@@ -1,0 +1,21 @@
+.service-foot {
+
+	padding-top: 45px;
+	.indicator-count{
+		color: #000;
+		font-weight: 700;
+	}
+	.indicator-page{
+		& > span{
+			background-color: #26252d;
+			opacity: 0.09;
+		}
+	}
+
+	.social{
+		a{
+			color: #000;
+		}
+	}
+
+}

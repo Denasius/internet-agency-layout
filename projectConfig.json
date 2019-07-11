@@ -13,7 +13,14 @@
     "close": [],
     "video": [],
     "navigation": [],
-    "indicator": []
+    "indicator": [],
+    "team-title": [],
+    "team-slider": [],
+    "team-foot": [],
+    "service-title": [],
+    "service-cart": [],
+    "service-foot": [],
+    "portfolio-title": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",

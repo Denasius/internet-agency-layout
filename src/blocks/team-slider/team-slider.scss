@@ -1,0 +1,65 @@
+.team-slider {
+	padding-right: 85px;
+
+	.slider{
+		.item{
+			display: inline-block;
+			span{
+				display: block;
+			}
+		}
+
+		.position{
+			margin-top: 50px;
+			text-align: center;
+			min-height: 112px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: flex-end;
+			&-name{
+				color: #0494ef;
+				font-size: 23px;
+				font-weight: 700;
+				line-height: 29px;
+				text-transform: uppercase;
+			}
+			&-position{
+				color: #6a6a6a;
+				font-size: 12px;
+				font-weight: 400;
+			}
+
+			.description{
+				font-size: 15px;
+				line-height: 18.38px;
+				color: #ffffff;
+				font-weight: 400;
+				padding-top: 26px;
+			}
+		}
+	}
+
+}
+
+
+.slick-custom-arrow{
+	width: 12px;
+	height: 18px;
+	transition: all .3s ease;
+	svg{
+		use{
+			symbol{
+				path{
+					fill: rgb(4,148,239);
+				}
+			}
+			
+		}
+	}
+	&.arrow-prev{
+		left: 20px;
+		position: absolute;
+		top: 0;
+	}
+}
