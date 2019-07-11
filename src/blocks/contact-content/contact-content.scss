@@ -1,0 +1,39 @@
+.contact-content {
+
+	margin-top: 81px;
+	padding-right: 171px;
+
+	.form-p{
+		color: #000408;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 29px;
+	}
+
+	form{
+		input{
+			width: 100%;
+			background-color: #f9f9f9;
+			margin-bottom: 25px;
+			border: 2px solid rgba(0,0,0,0.2);
+			box-shadow: 1px 8px 13px rgba(2, 3, 4, 0.15);
+			border-radius: 5px;
+			padding: 10px 25px;
+			font-size: 14px;
+			color: #000;
+			caret-color: #0494ef;
+			&::-webkit-input-placeholder{
+				color: #000;
+			}
+			&:focus{
+				border: 2px solid #0494ef;
+			}
+		}
+		button{
+			border: none;
+			color: #fff;
+			margin-top: 63px;
+		}
+	}
+
+}

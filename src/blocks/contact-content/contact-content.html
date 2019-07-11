@@ -1,0 +1,27 @@
+<!--DEV
+@ @include('blocks/contact-content/contact-content.html')
+-->
+
+<div class="contact-content">
+	<div class="container-fluid">
+		<div class="row">
+
+			<div class="col-md-4">
+				<div class="form">
+					<p class="form-p">С вами свяжутся в самое ближайшее время!</p>
+					<form action="mail.php" method="POST">
+						<input type="text" name="name" placeholder="Имя" required>
+						<input type="text" name="phone" placeholder="Номер телефона" required>
+						<input type="email" name="email" placeholder="Емаил" required>
+
+						<button type="submit" class="btn-custom">Узнать больше</button>
+					</form>
+				</div>
+			</div>
+
+			<div class="col-md-8">				
+				<div class="map"></div>
+			</div>
+		</div>
+	</div>
+</div>

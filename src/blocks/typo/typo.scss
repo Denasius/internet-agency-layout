@@ -103,8 +103,8 @@ a{
   }
 }
 
-.service, .portfolio{
-  background-color: #fff;
+.service, .portfolio, .contact{
+  background-color: #f9f9f9;
   .navigation{
     nav{
       ul{
@@ -138,5 +138,16 @@ a{
         }
       }
     }
+  }
+}
+
+.btn-custom{
+  box-shadow: 0 9px 24px rgba(104, 38, 240, 0.3);
+  border-radius: 41px;
+  background-image: linear-gradient(-183deg, #0abff0 0%, #0556ef 100%);
+  padding: 27px 69px 27px 43px;
+  font-size: 17px;
+  &:hover{
+    color: #fff;
   }
 }

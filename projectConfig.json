@@ -22,7 +22,9 @@
     "service-foot": [],
     "portfolio-title": [],
     "portfolio-grid": [],
-    "portfolio-footer": []
+    "portfolio-footer": [],
+    "contact-title": [],
+    "contact-content": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",
