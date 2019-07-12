@@ -156,11 +156,48 @@ a{
   .wrapper{
     padding-left: 0 !important;
   }
+  .team-title, .team-slider{
+    padding-right: .5rem;
+    padding-left: .5rem;
+  }
 }
 
 @media screen and ( max-width: 991px ) {
   .foot, .team-foot, .service-foot, .portfolio-footer, .contact-foot{
     display: none;
     visibility: hidden;
+  }
+}
+
+@media screen and ( max-width: 916px ){
+  .team-title, .service-title, .portfolio-title{
+    .h1{
+      margin-right: 0;
+    }
+    .sub-title{
+      display: none;
+      visibility: hidden;
+    }
+  }
+}
+
+@media screen and ( max-width: 568px ){
+  .team-title, .service-title, .portfolio-title{
+    .h1{
+      font-size: 3rem;
+      padding-right: 0;
+    }
+  }
+}
+
+@media screen and ( max-width: 434px ){
+  .team-title, .service-title, .portfolio-title{
+    .h1{
+      font-size: 2rem;
+      text-align: center;
+      width: 100%;
+      padding-right: 0;
+      margin-right: 0;
+    }
   }
 }

@@ -92,6 +92,9 @@
 			}
 			ul{
 				li{
+					a{
+						color: #fff !important;
+					}
 					&:first-child{
 						padding-top: 1rem;
 					}
@@ -110,6 +113,9 @@
 			display: none;
 			visibility: hidden;
 			padding-top: .5rem;
+			a{
+				color: #fff !important;
+			}
 			&.active{
 				display: block;
 				visibility: visible;
