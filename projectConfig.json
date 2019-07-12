@@ -24,7 +24,8 @@
     "portfolio-grid": [],
     "portfolio-footer": [],
     "contact-title": [],
-    "contact-content": []
+    "contact-content": [],
+    "contact-foot": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",

@@ -21,8 +21,50 @@
       @@include('blocks/navigation/navigation.html')
       @@include('blocks/contact-title/contact-title.html')
       @@include('blocks/contact-content/contact-content.html')
+      @@include('blocks/contact-foot/contact-foot.html')
 
     </div>
     @@include('_include/page_bottom.html')
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+    <script type="text/javascript">
+      ymaps.ready(unit);
+      function unit(){ 
+          var myMapContact = new ymaps.Map("map", {
+              center:[55.16412483401621,61.37521800781248],
+              zoom:10,
+              controls: ['smallMapDefaultSet'],
+          }); 
+          jQuery(window).resize(function () {
+              if (jQuery(window).width() < 992) {
+                  myMapContact.setCenter([55.16412483401621,61.37521800781248]);
+              }
+          });
+          if (jQuery(window).width() < 992) {
+              myMapContact.setCenter([55.16412483401621,61.37521800781248]);
+          }
+          myMapContact.controls
+              .remove('searchControl')
+              .remove('typeSelector')
+              .remove('fullscreenControl')
+              .remove('rulerControl')
+              .remove('trafficControl')
+              .remove('zoomControl')
+              .remove('geolocationControl');
+
+          var myPinContact = new ymaps.GeoObjectCollection({}, {
+              iconLayout: 'default#image',
+              iconImageHref: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAoCAMAAADaOGodAAAAAXNSR0IB2cksfwAAAQ5QTFRFAAAAgP//BZjwBZXvBZXwBZXwBZbwBZXxDZnyBpbvBJTvBJTv////BZXxBJTvGpn/BJTwBZXvBZTwBZXwBpbxBpXxIJ//BJXvHKr/BZXwBZXwBZTwBpTyD5bwBJfyDJfzBZXvQL//BZXwBpfwBZTwK6r/BZXvBJXxBZbvBZj0BZXwBJXyBJTwBZXwBJbvBZfvBZTwBZXwBZXvBJbwBZTxBJXwB5XxBZXwBpbwC5X0CJfvBJTwEqT/BJTvBJXvB5fxBZTvBpnyBJTwBJXvBJXwBZXvCJvwBJXvBZbwBJXvBJXwBJTwBJTwBpXwBZTwEJ/vB5XwBZXwF6L/BZbxBJTwBJjyBpTwBZTvBpn0Bpb0u09RXwAAAFp0Uk5TAAI0cZWmljUUg+X/AWrxCq7Bp6haWwjmCWXHy08ROxakBGdT3Aahf3Avmjr5qXIxmd2jeW54SM9VGECsDrOyR8Qo+HN0wiHzZLS17O1UpRBG2ws4/TmG0C0uE4qBAwAAAUVJREFUeJx102tfAVEQB+C/XMIQ2hJKKkmJ0k2UcqnQzaVEff8vEnbn7O5xdl7NzPPizDm/OQCHa8Xt8Xp97lUX5PAHgmREMOC3USi8RpZYC4dMi0RJimhEWEw2ohjr+rIRabptqIxoc27xoBq3EjNMqo0oOcOUqLZ30oldryhTQEYUe/uLEQ5EI4Msp4c5Y/gj7mSR5/SYr33CnTwKnJ6KBysanQJKzliCxnjGds4dDWVOL+IGXnKnjCsxuaaPey0aN6iYT3JbraXv7s26gnqRHKJYBx6c8HF2RsMJG/MJmmprLsZrtVXWbukXe1LhM6+zYsFexGp3urJ1O+bi9mTsWVf+1W5vtv9Qe7faR82G+LRiFVL0TevLhoH5BQdLiCHjcNkAj24+lSEymtvoS4n4HhONf9QGTIgmTobcdJpzRPz+2cp/c8QxDkonjlQAAAAASUVORK5CYII=',
+              iconImageSize: [30, 40],
+              iconImageOffset: [-30, -90]
+          });     
+          var myPlc1 = new ymaps.Placemark([55.16412483401621,61.37521800781248], {
+              hintContent: 'г. Челябинск ул. Космонавтов, 47',
+              balloonContent: 'г. Челябинск ул. Космонавтов, 47',
+          }); 
+          
+          myPinContact.add(myPlc1);
+          myMapContact.geoObjects.add(myPinContact);
+      }
+    </script>
   </body>
 </html>

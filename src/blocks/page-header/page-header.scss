@@ -24,3 +24,56 @@
 	}
 
 }
+
+@media screen and (max-width: 1199px) {
+	.page-header{
+		.main-info{
+			padding-left: .5rem;
+
+		}
+	}
+}
+
+@media screen and (max-width: 991px){
+	.page-header{
+		margin-top: 12rem;
+	}
+}
+
+@media screen and ( max-width: 932px ) {
+	.page-header{
+		.btn-custom{
+			left: 0;
+			padding-right: 0;
+			padding-left: 0;
+			text-align: center;
+		}
+	}
+}
+
+@media screen and ( max-width: 582px ) {
+	.page-header{
+		.main-info{
+			p{
+				text-align: center;
+			}
+			.h1{
+				margin-bottom: 1rem;
+				font-size: 3rem;
+				text-align: center;
+			}
+		}
+	}
+}
+
+@media screen and ( max-width: 482px ) {
+	.page-header{
+		.main-info{
+			.h1{
+				font-size: 2rem;
+				text-align: center;
+				line-height: 50px;
+			}
+		}
+	}
+}

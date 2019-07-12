@@ -151,3 +151,16 @@ a{
     color: #fff;
   }
 }
+
+@media screen and ( max-width: 1199px ) {
+  .wrapper{
+    padding-left: 0 !important;
+  }
+}
+
+@media screen and ( max-width: 991px ) {
+  .foot, .team-foot, .service-foot, .portfolio-footer, .contact-foot{
+    display: none;
+    visibility: hidden;
+  }
+}

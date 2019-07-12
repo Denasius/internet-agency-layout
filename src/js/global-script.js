@@ -61,4 +61,14 @@ $(document).ready(function() {
   function toggleMenu() {
     $(this).toggleClass("active");
   }
+
+  var clickBurger = function () {
+    $('.navbar-toggler').on('click', function () {
+      $(this).closest('.navigation').find('nav').toggleClass('active')
+      $(this).closest('.navigation').find('.email').toggleClass('active')
+      $(this).closest('.navigation').find('.phone').toggleClass('active');
+    });
+  }
+
+  clickBurger();
 });

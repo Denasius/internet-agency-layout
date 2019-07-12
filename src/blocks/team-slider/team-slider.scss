@@ -49,12 +49,9 @@
 	transition: all .3s ease;
 	svg{
 		use{
-			symbol{
-				path{
-					fill: rgb(4,148,239);
-				}
-			}
-			
+			.active-path{
+				fill: rgb(4,148,239);
+			}			
 		}
 	}
 	&.arrow-prev{
