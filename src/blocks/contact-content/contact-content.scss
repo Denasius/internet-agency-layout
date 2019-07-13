@@ -98,3 +98,147 @@
     -o-filter: invert(0) grayscale(100%) brightness(100%);
     filter: invert(0) grayscale(100%) brightness(100%)
 }
+
+@media screen and (max-width: 1360px){
+	.contact-content{
+		.info{
+			.phone-email{
+				a{
+					&:not(:last-child){
+						font-size: 3rem;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1275px){
+	.contact-content{
+		.info{
+			.phone-email{
+				a{
+					&:not(:last-child){
+						font-size: 2.6rem;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and ( max-width: 1199px ) {
+	.contact-content, .contact-title{
+		padding-right: .5rem;
+		padding-left: .5rem;
+	}
+	.contact-title .sub-title{
+		display: none;
+		visibility: hidden;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.contact-content{
+		padding-bottom: 1rem;
+		.btn-custom{
+			width: 100%;
+			margin-top: 1rem;
+		}
+	}
+}
+
+@media screen and ( max-width: 895px ) {
+	.contact-content{
+		.info{
+			.phone-email{
+				a:not(:last-child){
+					font-size: 2rem;
+				}
+			}
+		}
+		.btn-custom{
+			padding-right: 0;
+			padding-left: 0;
+		}
+		.form-p{
+			text-align: center;
+		}
+	}
+}
+
+@media screen and ( max-width: 767px ) {
+	.contact-content{
+		.btn-custom{
+			margin-bottom: 2rem;
+		}
+	}
+}
+
+@media screen and (max-width: 675px){
+	.contact-title{
+		.h1{
+			margin-right: 0;
+			font-size: 3rem;
+			text-align: center;
+			width: 100%;
+		}
+	}
+}
+
+@media screen and (max-width: 545px){
+	.contact-title{
+		.h1{
+			font-size: 2.5rem;
+		}
+	}
+}
+
+@media screen and ( max-width: 519px ) {
+	.contact-content{
+		.info{
+			.span.address span{
+				font-size: .8rem;
+			}
+			.phone-email{
+				a:not(:last-child){
+					font-size: 1rem;
+				}
+				a:last-child{
+					font-size: .8rem;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 467px){
+	.contact-title{
+		.h1{
+			font-size: 2rem;
+		}
+	}
+}
+
+@media screen and (max-width: 369px){
+	.contact-title{
+		.h1{
+			font-size: 1.5rem;
+		}
+	}
+}
+
+@media screen and (max-width: 347px) {
+	.contact-content{
+		.info{
+			span.address{
+				display: none;
+				visibility: hidden;
+			}
+			.phone-email{
+				align-items: flex-end;
+				width: 100%;
+			}
+		}
+	}
+}

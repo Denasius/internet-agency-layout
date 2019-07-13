@@ -70,5 +70,15 @@ $(document).ready(function() {
     });
   }
 
+   var initScroll = function () {
+      $(".portfolio-block").niceScroll({
+        cursorcolor:"#0494ef",
+        horizrailenabled: true,
+        railalign: 'right',
+        autohidemode: false,
+      });
+    }
+
   clickBurger();
+  initScroll();
 });
