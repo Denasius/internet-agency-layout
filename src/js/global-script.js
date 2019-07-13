@@ -79,29 +79,6 @@ $(document).ready(function() {
       });
     }
 
-    var formHandler = function () {
-      $('form').on('submit', function (e) {
-        e.preventDefault();
-        var _form = $(this),
-            _method = _form.attr('method'),
-            _url = _form.attr('action');
-
-        return $.ajax({
-          type: _method,
-          url: _url,
-          date: _form.serialize(),
-          beforeSend: function () {},
-          success: function () {},
-          error: function (request, errorStatus, errorThrown) {
-            console.log(request);
-            console.log(errorStatus);
-            console.log(errorThrown);
-          }
-        });
-      });
-    }
-
   clickBurger();
   initScroll();
-  formHandler();
 });
