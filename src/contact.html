@@ -26,6 +26,46 @@
     @@include('_include/page_bottom.html')
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
     <script type="text/javascript">
+      (function () {
+        var formHandler = function () {
+          $('form').on('submit', function (e) {
+            e.preventDefault();
+            var _form = $(this),
+                _method = _form.attr('method'),
+                _url = _form.attr('action');
+
+            return $.ajax({
+              type: _method,
+              url: _url,
+              data: _form.serialize(),
+              beforeSend: function () {
+                _form.find('[type="submit"]').text('Отправка...');
+              },
+              success: function (response) {
+                _form.find('[type="submit"]').text('Узнать больше');
+                if ( $(response).hasClass('error') ) {
+                  _form.find('.ansewr').find('.error').remove();
+                  _form.find('.ansewr').append(response);
+                }
+                if ($(response).hasClass('success')) {
+                  _form.find('.ansewr').find('.error').remove();
+                  _form.closest('.form').find('.form-p').remove();
+                  _form.closest('.form').find('.answer-success').append(response);
+                }
+              },
+              error: function (request, errorStatus, errorThrown) {
+                console.log(request);
+                console.log(errorStatus);
+                console.log(errorThrown);
+              }
+            });
+          });
+        }
+
+        $(document).ready(function () {
+          formHandler();
+        });
+      })(jQuery)
       ymaps.ready(unit);
       function unit(){ 
           var myMapContact = new ymaps.Map("map", {

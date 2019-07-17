@@ -49,9 +49,13 @@
 
 .foot, .team-foot, .service-foot, .portfolio-footer, .contact-foot{
 
-	padding-top: 367px;
-	padding-bottom: 70px;
+	// padding-top: 367px;
+	// padding-bottom: 70px;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+}
+
+.team-foot, .service-foot, .portfolio-footer, .contact-foot{
+	padding-bottom: 70px;
 }

@@ -92,6 +92,19 @@ a{
   height: 100%;
 }
 
+#page-home{
+  .wrapper{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 20px;
+  }
+
+}
+
 .blue-color{
   color: $blue_color;
 }
