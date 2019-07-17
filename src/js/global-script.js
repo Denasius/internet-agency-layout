@@ -82,3 +82,5 @@ $(document).ready(function() {
   clickBurger();
   initScroll();
 });
+
+AOS.init();

@@ -32,7 +32,8 @@
     "./src/scss/mixins.scss",
     "./src/scss/functions.scss",
     "./node_modules/bootstrap/scss/bootstrap-reboot.scss",
-    "./node_modules/bootstrap/scss/bootstrap-grid.scss"
+    "./node_modules/bootstrap/scss/bootstrap-grid.scss",
+    "./node_modules/aos/dist/aos.scss"
   ],
   "addCssAfter": [],
   "singleCompiled": [],
@@ -40,7 +41,8 @@
     "./node_modules/jquery/dist/jquery.min.js",
     "./node_modules/svg4everybody/dist/svg4everybody.js",
     "./node_modules/object-fit-images/dist/ofi.js",
-    "./node_modules/nicescroll/jquery.nicescroll.js"
+    "./node_modules/nicescroll/jquery.nicescroll.js",
+    "./node_modules/aos/dist/aos.js"
   ],
   "addJsAfter": [
     "./src/js/global-script.js",
