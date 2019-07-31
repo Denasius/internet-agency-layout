@@ -16,6 +16,7 @@
 	.logo{
 		padding-top: 36px;
 		display: inline-block;
+		max-width: 70px;
 	}
 	nav{
 		display: inline-block;
@@ -40,6 +41,14 @@
 					&:before{
 						transform: scale(1);
 					}
+				}
+			}
+			.current_page_item{
+				a{
+					color: $blue_color !important;
+				}
+				&:before{
+					transform: scale(1);
 				}
 			}
 			li:not(:last-child){
@@ -86,12 +95,19 @@
 		nav{
 			display: none;
 			visibility: hidden;
+			width: 100%;
+			padding-top: 20px;
 			&.active{
 				display: block;
 				visibility: visible;
 			}
 			ul{
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				flex-direction: column;
 				li{
+					margin-right: 0 !important;
 					a{
 						color: #fff !important;
 					}
@@ -100,6 +116,9 @@
 					}
 					display: block;
 					padding: .5rem 0;
+					&:before{
+						transform: scale(0) !important;
+					}
 					&:hover{
 						&:before{
 							transform: scale(0);
@@ -110,6 +129,8 @@
 		}
 
 		.email, .phone{
+			width: 100%;
+			text-align: center;
 			display: none;
 			visibility: hidden;
 			padding-top: .5rem;
@@ -120,6 +141,10 @@
 				display: block;
 				visibility: visible;
 			}
+		}
+
+		.phone{
+			padding-bottom: 20px;
 		}
 
 		.logo{

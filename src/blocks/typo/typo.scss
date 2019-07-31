@@ -180,6 +180,12 @@ a{
     display: none;
     visibility: hidden;
   }
+  #page-home .wrapper{
+    justify-content: normal;
+  }
+  .page-header .main-info .btn-custom{
+    margin: 0 15px;
+  }
 }
 
 @media screen and ( max-width: 916px ){

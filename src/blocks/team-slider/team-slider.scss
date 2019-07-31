@@ -4,8 +4,14 @@
 	.slider{
 		.item{
 			display: inline-block;
+			outline: none;
 			span{
 				display: block;
+			}
+			.member{
+				img{
+					max-height: 260px;
+				}
 			}
 		}
 
